@@ -10,4 +10,4 @@
 
 #### MVC
 
-[[images/desing.png]]
+[[images/design.png]]
