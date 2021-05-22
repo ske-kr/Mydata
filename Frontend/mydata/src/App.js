@@ -6,11 +6,7 @@ class SignIn extends Component {
   render() {
     return (
       <div>
-<<<<<<< Updated upstream
         <form action="http:://localhost:8000/user/signin/" method="POST" className='signUp'>
-=======
-        <form action="localhost:8000/user/signup/" method="POST" className='signUp'>
->>>>>>> Stashed changes
           <input placeholder='Email' type='email'/>
           <input placeholder='Password' type='password'/>
           <button type='submit'>Submit</button>
@@ -25,11 +21,7 @@ class SignUp extends Component {
   render() {
     return (
       <div>
-<<<<<<< Updated upstream
-        <form action="http:://localhost:8000/user/signup/" method="POST" className='signUp'>
-=======
         <form action="http://localhost:8000/user/signup/" method="POST" className='signUp'>
->>>>>>> Stashed changes
           <input placeholder='First Name' name='firstname'/>
           <input placeholder='Last Name' name='lastname'/>
           <input placeholder='Email' name='username'/>
