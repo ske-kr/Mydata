@@ -6,7 +6,7 @@ class SignIn extends Component {
   render() {
     return (
       <div>
-        <form action="http:://localhost:8000/user/signin/" method="POST" className='signUp'>
+        <form action="http://localhost:8000/user/signin/" method="POST" className='signUp'>
           <input placeholder='Email' type='email'/>
           <input placeholder='Password' type='password'/>
           <button type='submit'>Submit</button>
@@ -66,7 +66,7 @@ class Edit extends Component {
           <div>Delete Account</div>
         </div>
 
-        <form action="http:://localhost:8000/user/dataupload/" method="POST" className='dataUpload'>
+        <form action="http://localhost:8000/user/dataupload/" method="POST" className='dataUpload'>
           <input type="file" id="myFile" name="filename"/>
           <input type="submit"/>
         </form>
