@@ -90,5 +90,7 @@ def token(request):
 
 
 def excel(request):
-
-    return HttpResponse(status=204)
+    if request.method=='POST':
+        myexcel=request.FILES
+    else:
+        return HttpResponse(status=403)
