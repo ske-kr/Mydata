@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Route} from "react-router-dom";
-
+import axios from 'axios'
 
 class SignIn extends Component {
   render() {
@@ -20,7 +20,12 @@ class SignIn extends Component {
 
 class SignUp extends Component {
   
-  state = { selectedFiles: null };
+  state = { selectedFiles: null,
+    username:"",
+    firstname:"",
+    lastname:"",
+    password:"",
+   };
   
   onClickHandler = event => {
     const formData = new FormData();
@@ -32,12 +37,19 @@ class SignUp extends Component {
       this.state.password,
     );
     const config = {
-      headers: {
-        "content-type": "multipart/form-data"
+      method:'POST',
+      url:"http:://localhost:8000/user/signup/",
+      data:{
+        firstname:this.state.firstname,
+        lastname:this.state.lastname,
+        username:this.state.username,
+        password:this.state.password,
+
       }
     }
-    axios.post("http:://localhost:8000/user/signup/" , formData, config);
+    axios(config);
   };
+
 
   fileChangedHandler = event => {
     const files = event.target.files;
@@ -50,10 +62,10 @@ class SignUp extends Component {
     return (
       <div>
         <form className='signUp'>
-          <input placeholder='First Name' name='firstname'/>
-          <input placeholder='Last Name' name='lastname'/>
-          <input placeholder='Email' name='username'/>
-          <input placeholder='Password' name='password'/>
+          <input placeholder='First Name' name='firstname' value={this.state.firstname} onChange={(event) => { this.setState({ firstname: event.target.value }) }}/>
+          <input placeholder='Last Name' name='lastname' value={this.state.lastname} onChange={(event) => { this.setState({ lastname: event.target.value }) }}/>
+          <input placeholder='Email' name='username' value={this.state.username} onChange={(event) => { this.setState({ username: event.target.value }) }}/>
+          <input placeholder='Password' name='password' value={this.state.password} onChange={(event) => { this.setState({ password: event.target.value }) }}/>
           <button onClick={this.onClickHandler} type='submit'>Submit</button>
         </form>
         <a href="/">Sign In</a>

@@ -10,9 +10,9 @@ from django.shortcuts import get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.csrf import ensure_csrf_cookie
 import requests
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
+# import numpy as np
+# import matplotlib.pyplot as plt
+# import pandas as pd
 # Create your views here.
 
 User = get_user_model()
