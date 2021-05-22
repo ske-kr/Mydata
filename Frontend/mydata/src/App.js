@@ -6,7 +6,7 @@ class SignIn extends Component {
   render() {
     return (
       <div>
-        <form className='signUp'>
+        <form action="localhost:8000/user/signin/" method="POST" className='signUp'>
           <input placeholder='Email' type='email'/>
           <input placeholder='Password' type='password'/>
           <button type='submit'>Submit</button>
@@ -20,13 +20,16 @@ class SignIn extends Component {
 class SignUp extends Component {
   render() {
     return (
-      <form className='signUp'>
-        <input placeholder='First Name' type='fName'/>
-        <input placeholder='Last Name' type='LName'/>
-        <input placeholder='Email' type='email'/>
-        <input placeholder='Password' type='password'/>
-        <button type='submit'>Submit</button>
-      </form>
+      <div>
+        <form action="localhost:8000/user/signup/" method="POST" className='signUp'>
+          <input placeholder='First Name' type='fName'/>
+          <input placeholder='Last Name' type='LName'/>
+          <input placeholder='Email' type='email'/>
+          <input placeholder='Password' type='password'/>
+          <button type='submit'>Submit</button>
+        </form>
+        <a href="/">Sign In</a>
+      </div>
     )
   }
 }
@@ -42,7 +45,7 @@ class MainPage extends Component {
           <a href='/'>Logout</a>
         </div>
 
-        <form className='dataUpload'>
+        <form action="localhost:8000/user/mainpage/" method="POST" className='dataUpload'>
           <input type="file" id="myFile" name="filename"/>
           <input type="submit"/>
         </form>
@@ -57,12 +60,13 @@ class Edit extends Component {
     return (
       <div>
         <a href='/MainPage'>Main Page</a>
+        
         <div>
           <div>Change Name</div>
           <div>Delete Account</div>
         </div>
 
-        <form className='dataUpload'>
+        <form action="localhost:8000/user/dataupload/" method="POST" className='dataUpload'>
           <input type="file" id="myFile" name="filename"/>
           <input type="submit"/>
         </form>
@@ -77,6 +81,7 @@ class Result extends Component {
     return (
       <div>
         <a href='/MainPage'>Main Page</a>
+
         <div>
           Show Data
         </div>
