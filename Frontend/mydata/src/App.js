@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import {Route} from "react-router-dom";
 
+
 class SignIn extends Component {
   render() {
     return (
@@ -18,18 +19,47 @@ class SignIn extends Component {
 }
 
 class SignUp extends Component {
+  
+  state = { selectedFiles: null };
+  
+  onClickHandler = event => {
+    const formData = new FormData();
+    formData.append(
+      "login info",
+      this.state.username,
+      this.state.firstname,
+      this.state.lastname,
+      this.state.password,
+    );
+    const config = {
+      headers: {
+        "content-type": "multipart/form-data"
+      }
+    }
+    axios.post("http:://localhost:8000/user/signup/" , formData, config);
+  };
+
+  fileChangedHandler = event => {
+    const files = event.target.files;
+    this.setState({
+      selectedFiles: files
+    });
+  };
+  
   render() {
     return (
       <div>
-        <form action="http:://localhost:8000/user/signup/" method="POST" className='signUp'>
+        <form className='signUp'>
           <input placeholder='First Name' name='firstname'/>
           <input placeholder='Last Name' name='lastname'/>
           <input placeholder='Email' name='username'/>
           <input placeholder='Password' name='password'/>
-          <button type='submit'>Submit</button>
+          <button onClick={this.onClickHandler} type='submit'>Submit</button>
         </form>
         <a href="/">Sign In</a>
+
       </div>
+      
     )
   }
 }
@@ -53,13 +83,12 @@ class MainPage extends Component {
       </div>
     )
   }
-}
-
+} 
 class Edit extends Component {
   render() {
     return (
       <div>
-        <a href='/MainPage'>Main Page</a>
+        <a href='/mainpage'>Main Page</a>
 
         <div>
           <div>Change Name</div>
@@ -75,12 +104,11 @@ class Edit extends Component {
     )
   }
 }
-
 class Result extends Component {
   render() {
     return (
       <div>
-        <a href='/MainPage'>Main Page</a>
+        <a href='/mainpage'>Main Page</a>
 
         <div>
           Show Data
@@ -94,7 +122,6 @@ class Result extends Component {
     )
   }
 }
-
 
 class App extends Component {
   render() {
