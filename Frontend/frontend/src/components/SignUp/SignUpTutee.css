@@ -1,0 +1,63 @@
+.id {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size:20px;
+}
+.id input{
+    margin-left: 10px;
+}
+.password {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size:20px;
+}
+.password input{
+    margin-left: 10px;
+}
+label{
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size:20px;
+}
+.address{
+    width:300px;
+}
+.password-confirmation {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size:20px;
+}
+.password .text-left {
+    width:300px;
+}
+.password-confirmation .text-left {
+    width:300px;
+}
+
+.password-confirmation input{
+    margin-left: 10px;
+}
+.child-list-container-div{
+    text-align: left;
+}
+.child-list-container-div button{
+    width:200px;
+    margin-top: 15px;
+    text-align: center;
+    padding: 10px;
+    font: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid rgba(142, 168, 202, 0.5);
+    background-color: rgba(142, 168, 202, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.phoneinput {
+    width: 200px;
+    text-align: left;
+}

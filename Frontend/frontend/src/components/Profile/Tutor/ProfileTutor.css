@@ -1,0 +1,53 @@
+.profiletutor {
+    display: flex;
+    align-items: center;
+}
+
+
+.profiletutor h1{
+    text-align: left;
+    font-size:200%;
+    padding-top:50px;
+    padding-left:50px;
+    font-family:serif;
+}
+
+.profiletutor h2{
+    text-align: left;
+}
+
+.profiletutor h3{
+    text-align: left;
+    font-size:120%;
+    font-family:serif;
+}
+
+.profiletutor img{
+    margin-right:10px;
+    float:left;
+    width:28%;
+    height:28%;
+    border: 1px solid black;
+}
+.profiletutor .button-list{
+    text-align: left;
+}
+
+.profiletutor .button-list button{
+    width:200px;
+    text-align: left;
+    padding: 10px;
+    font: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid rgba(61, 110, 184, 0.5);
+    background-color: rgba(61, 110, 184, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.profiletutor .button-list img{
+    float:right;
+    width:28%;
+    height:28%;
+    border: 1px solid black;
+}

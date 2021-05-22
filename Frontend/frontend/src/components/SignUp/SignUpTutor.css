@@ -1,0 +1,97 @@
+.id {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size:20px;
+}
+.id input{
+    margin-left: 10px;
+    width:300px;
+}
+.password {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size:20px;
+}
+.password input{
+    margin-left: 10px;
+}
+label{
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size:20px;
+}
+
+.password-confirmation {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size:20px;
+}
+.password-confirmation input{
+    margin-left: 10px;
+}
+
+.signuptutor-div .signuptutor-div-input .text-left{
+    width:300px;
+}
+.signuptutor-div .signuptutor-div-input .signuptutor-input-certificate{
+    width:400px;
+}
+
+
+.signuptutor-div .signuptutor-div-input label .phoneinput {
+    width:300px;
+}
+
+.signuptutor-div .signuptutor-div-input .signuptutor-label-id{
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size:20px;
+}
+.signuptutor-div .signuptutor-div-input .signuptutor-label-password{
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size:20px;
+}
+.signuptutor-div .signuptutor-div-input .subject-label{
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size:20px;
+}
+.signuptutor-div .signuptutor-div-input .subject-label .select{
+    width:500px;
+}
+.signuptutor-div .signuptutor-div-input .gender {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size:20px;
+    width:200px;
+}
+.signuptutor-div .signuptutor-div-input .university {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size:20px;
+    width:200px;
+}
+.signuptutor-div .signuptutor-div-input .gender select{
+    width:200px;
+}
+.signuptutor-div .signuptutor-div-input .timetable{
+    text-align: center;
+    padding-left: 100px;
+    width:70%;
+    height:70%;
+}
+
+.phoneinput {
+    text-align: left;
+    width: 200px;
+}

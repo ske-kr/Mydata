@@ -1,0 +1,27 @@
+#condition {
+    text-align: center;
+}
+
+#jumbo {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 1rem;
+}
+
+label {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.row {
+    text-align: left;
+}
+
+input {
+    text-align: left;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}

@@ -1,0 +1,26 @@
+/*
+.child-name-label{
+    text-align: center;
+}
+*/
+label{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size:20px;
+}
+.select{
+    width:200px;
+}
+.subject-label{
+    text-align: left;
+}
+.subject-label .select-label .select .select{
+    width:300px;
+}
+.timetable {
+    text-align: center;
+    padding-left: 100px;
+    width:70%;
+    height:70%;
+}
