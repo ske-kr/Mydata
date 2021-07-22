@@ -251,7 +251,7 @@ def certificate(request):
         plt.xticks(fontsize= 8, in_layout=True,rotation=-70)#x축 label 설정
         plt.tight_layout()#이름이 잘리는 경우를 방지 - x,y축 data label이 짧다면 없애도 됨
 
-        plt.savefig('ske_SNU10.png')
+        plt.savefig('./image/final_image.png')
 
     else:
         return HttpResponseNotAllowed(['POST'])
